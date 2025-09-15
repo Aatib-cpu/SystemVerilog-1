@@ -13,7 +13,7 @@ always #20 clk25 = ~clk25; // TIme periord = 40 ns; freq = 25 MHz
 
 initial begin 
 $dumpfile("clk_div.vcd");
-$dumpvars(0,clk_div.sv);
+$dumpvars(0,clk_div);
 #200 $finish();
 end
 

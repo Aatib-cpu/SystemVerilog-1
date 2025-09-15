@@ -12,9 +12,9 @@ module clock_gen2 ();
     
 
     task calc();
-    periord = 1000/Frequency;
-    ton = Duty_Cycle*periord;
-    toff = periord-ton;
+    periord = 1000/Frequency; // in nano second
+    ton = Duty_Cycle*periord; // in nano second
+    toff = periord-ton; // in nano second
     endtask
 
 
